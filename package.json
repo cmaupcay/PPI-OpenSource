@@ -1,0 +1,21 @@
+{
+  "name": "ppi",
+  "version": "1.0.0",
+  "description": "Projet Professionnel Individualisé",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tensaiji/PPI-OpenSource.git"
+  },
+  "author": "tensaiji",
+  "license": "EUPL-1.0",
+  "private": true,
+  "scripts": {
+    "build": "make dist"
+  },
+  "devDependencies": {
+    "ts-loader": "^9.4.2",
+    "typescript": "^5.0.3",
+    "webpack": "^5.78.0",
+    "webpack-cli": "^5.0.1"
+  }
+}

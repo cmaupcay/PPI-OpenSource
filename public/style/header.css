@@ -1,0 +1,44 @@
+#ppi>header
+{
+    position: absolute;
+    left: 2vh;
+    height: 98vw;
+    background-color: var(--gris-clair);
+}
+
+#ppi>header>#titre
+{
+    display: flex;
+    flex-direction: column;
+}
+
+#ppi>header>#titre>*
+{
+    display: flex;
+    align-items: end;
+}
+
+#ppi>header>#titre>*>h1
+{
+    font-size: 7rem;
+}
+
+#ppi>header>#titre>*>span
+{
+    font-size: 3rem;
+    letter-spacing: .5rem;
+    padding-bottom: .75rem;
+}
+
+#ppi>header>#titre>*>h1:hover
+{
+    cursor: pointer;
+}
+
+#ppi>header>#titre>*>span,
+#ppi>header>#titre>*>h1
+{
+    color: var(--sombre);
+    text-shadow: 0 0 .5rem;
+    text-align: left;
+}
