@@ -1,3 +1,8 @@
+html
+{
+    overflow: hidden;
+}
+
 #ppi
 {
     @extend %base;
@@ -11,6 +16,7 @@
     background-position: center;
     background-blend-mode: darken;
     text-align: center;
+    overflow: hidden;
 
     * { @extend %base; }
 
@@ -28,6 +34,9 @@
             font-size: 3rem - .75 * ($n - 1);
             letter-spacing: .75rem;
             text-transform: uppercase;
+            @media (max-width: $media-s-max-width) {
+                font-size: 2.5rem - .75 * ($n - 1);
+            }
         }
     }
 
@@ -38,6 +47,9 @@
         {
             font-size: 1.45rem - .3 * ($n - 4);
             letter-spacing: .5rem;
+            @media (max-width: $media-s-max-width) {
+                font-size: 1.3rem - .3 * ($n - 4);
+            }
         }
     }
 
@@ -45,6 +57,9 @@
     {
         font-size: 1.05rem;
         letter-spacing: .25rem;
+        @media (max-width: $media-s-max-width) {
+            font-size: 0.95rem;
+        }
     }
 
     p
