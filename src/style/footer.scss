@@ -1,6 +1,7 @@
 #ppi>footer
 {
     @extend %panel;
+    @extend %entree;
     position: absolute;
     bottom: 1.5vh;
     width: 80vw;
@@ -19,7 +20,7 @@
         }
     }
 
-    &.ferme
+    &.scroll-limite
     {
         opacity: 0;
         bottom: -9vh;

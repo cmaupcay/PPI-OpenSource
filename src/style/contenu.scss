@@ -1,8 +1,8 @@
 #ppi>#contenu
 {
+    @extend %entree;
     width: 72vw;
-    height: 95vh;
-    padding: 0 14vw;
+    padding: 0 14vw 14vh;
     overflow-y: scroll;
     
     @media (max-width: $media-m-max-width) {
@@ -15,7 +15,6 @@
 
     @media (max-width: $media-s-max-width) {
         width: 90vw;
-        height: 97vh;
         padding: {
             left: 5vw;
             right: 5vw;
@@ -25,6 +24,12 @@
     &>*
     {
         @extend %contenu;
+        min-height: 75vh;
+
+        &.scroll-limite
+        {
+            opacity: 0;
+        }
     }
 
     &>#accueil
@@ -32,15 +37,14 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
-        margin-bottom: 4vh;
-        min-height: 90%;
+        margin-top: 4.5vh;
+        min-height: 95.5vh;
 
         &::after
         {
             content: '';
             position: relative;
-            top: 2vh;
+            top: 3vh;
             width: 4rem;
             height: 4rem;
             border: {
@@ -59,11 +63,11 @@
             @include image("open-source.svg");
             width: 100%;
             height: 52vh;
-            margin-bottom: 2vh;
             opacity: .86;
             &:hover
             {
                 opacity: .92;
+                rotate: -7deg;
             }
         }
 

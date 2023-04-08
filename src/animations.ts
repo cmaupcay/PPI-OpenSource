@@ -5,6 +5,12 @@ export const REVELATION = revelation;
 export const REVELATION_CLASSE = "revelation";
 export const REVELATION_DELAIS = 200;
 
+export const ENTREE_CLASSE = "entree";
+export const ENTREE_DELAIS = 500;
+
+export const SCROLL_CLASSE = "scroll";
+export const SCROLL_LIMITE = "scroll-limite";
+
 const init_titre = () => {
     document.querySelectorAll("#ppi ." + REVELATION_CLASSE + ">*").forEach((e: Element, n: number) => {
         setTimeout(revelation.lancer, n * REVELATION_DELAIS, e, () => {
@@ -13,14 +19,27 @@ const init_titre = () => {
     })
 }
 
-const init_footer = () => {
-    const footer = document.querySelector("#ppi>footer");
-    const contenu = document.querySelector("#ppi>#contenu");
-    if (!!footer && !!contenu)
-        scroll.appliquer(footer, contenu);
+const init_scroll = (contenu: Element) => {
+    let limite: scroll.Limite;
+    document.querySelectorAll("#ppi ." + SCROLL_CLASSE).forEach((e: Element) => {
+        const limiteStr = e.getAttribute(SCROLL_LIMITE);
+        if (limiteStr) limite = Number.parseInt(limiteStr);
+        else limite = undefined;
+        scroll.lancer(e, contenu, limite);
+        scroll.appliquer(e, contenu, limite);
+    })
+}
+
+const init_entree = (contenu: Element) => {
+    init_scroll(contenu);
+    document.querySelectorAll("#ppi ." + ENTREE_CLASSE).forEach((e: Element) => {
+        e.classList.remove(ENTREE_CLASSE);
+    });
 }
 
 export const init = () => {
     init_titre();
-    init_footer();
+    const contenu = document.querySelector("#ppi>#contenu");
+    if (!!contenu)
+        setTimeout(init_entree, ENTREE_DELAIS, contenu);
 }

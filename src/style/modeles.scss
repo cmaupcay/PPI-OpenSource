@@ -33,6 +33,10 @@
     color: $principale;
 }
 
+%entree {
+    transition: all .75s ease-in;
+}
+
 %panel {
     display: flex;
     flex-direction: row;

@@ -1,17 +1,36 @@
-export const LIMITE_SCROLL = 72;
+export const CLASSE = "scroll-limite";
+export const DECALAGE = .44;
 
-export const CLASSE_FERME = "ferme";
+export type Limite = number | undefined;
 
-export const appliquer = (cible: Element, source: Element): boolean => {
+const estVisible = (cible: Element): boolean => {
+    const rect = cible.getBoundingClientRect();
+    return rect.top + rect.height * DECALAGE  >= 0
+        && rect.top + rect.height * (1 - DECALAGE) <= window.innerHeight;
+}
+
+export const lancer = (cible: Element, source: Element, limite: Limite): boolean => {
+    let r = false;
+    if ((limite && source.scrollTop > limite)
+    || (!limite && !estVisible(cible)))
+    {
+        cible.classList.add(CLASSE);
+        r = true;
+    }
+    else if (cible.classList.contains(CLASSE)
+         && ((limite && source.scrollTop <= limite)
+         || (!limite && estVisible(cible))))
+        {
+            cible.classList.remove(CLASSE);
+            r = true;
+        }
+    return r;
+}
+
+export const appliquer = (cible: Element, source: Element, limite: Limite): boolean => {
     source.addEventListener("scroll", (e: Event) => {
         e.preventDefault();
-        if (cible.classList.contains(CLASSE_FERME))
-        {
-            if (source.scrollTop <= LIMITE_SCROLL)
-                cible.classList.remove(CLASSE_FERME);
-        }
-        else if (source.scrollTop > LIMITE_SCROLL)  
-            cible.classList.add(CLASSE_FERME);
+        lancer(cible, source, limite);
     });
     return true;
 }
