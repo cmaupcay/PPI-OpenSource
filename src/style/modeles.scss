@@ -31,10 +31,13 @@
     border-radius: 1rem;
 }
 
-%image {
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
+@mixin image($image) {
+    background: {
+        image: url("./img/" + $image);
+        position: center;
+        size: contain;
+        repeat: no-repeat;
+    };
     &:hover
     {
         cursor: pointer;

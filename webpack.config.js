@@ -26,7 +26,7 @@ module.exports = {
             loader: "sass-loader",
             options: {
               warnRuleAsWarning: true,
-              sourceMap: true,
+              sourceMap: false,
               sassOptions: {
                 outputStyle: "compressed",
                 includePaths: ["src"]

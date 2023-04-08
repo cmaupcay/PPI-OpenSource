@@ -9,6 +9,6 @@
     "moduleResolution": "bundler",
     "removeComments": true,
     "skipLibCheck": true,
-    "sourceMap": true
+    "sourceMap": false
   }
 }

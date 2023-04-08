@@ -4,7 +4,17 @@
     width: 80vw;
     padding: 1.5vh 0;
 
-    section
+
+    @media (max-width: $media-s-max-width) {
+        width: 92vw;
+        &>#insa, &>#source
+        {
+            opacity: 0;
+            width: 0%;
+        }
+    }
+
+    &>section
     {
         height: 4rem;
         width: 33.33%;
@@ -14,16 +24,14 @@
         justify-content: center;
     }
 
-    #insa
+    &>#insa
     {
-        @extend %image;
+        @include image("insa.png");
         height: 80%;
-        background-image: url("./img/insa.png");
     }
 
-    #source
+    &>#source
     {
-        @extend %image;
-        background-image: url("./img/github.png");
+        @include image("github.png");
     }
 }

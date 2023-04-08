@@ -34,11 +34,10 @@ const fermer = (span: Element, nom: string, callback: Function | undefined = und
     if (ouverts.has(nom) && span.innerHTML.length > 0)
     {
         let n = nom.length - 1;
+        span.parentElement?.classList.remove(CLASSE_OUVERT);
         const interval = setInterval(() => {
             span.innerHTML = span.innerHTML.substring(0, n);
             n--;
-            if (n == 2)
-                span.parentElement?.classList.remove(CLASSE_OUVERT);
             if (n == -1)
             {
                 clearInterval(interval);

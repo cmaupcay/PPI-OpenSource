@@ -4,18 +4,29 @@
     left: 2vh;
     width: 7vw;
     height: 100%;
+    transition: margin-left 1s ease-in;
 
-    #titre
+    @media (max-width: $media-m-max-width) {
+        margin-left: -7rem;
+        transition: margin-left 1s ease-out;
+
+        &>#titre>*>span
+        {
+            opacity: 0 !important;
+        }
+    }
+
+    &>#titre
     {
         display: flex;
         flex-direction: column;
 
-        *
+        &>*
         {
             display: flex;
             align-items: end;
 
-            h1
+            &>h1
             {
                 font-size: 7rem;
                 &:hover
@@ -24,7 +35,7 @@
                 }
             }
 
-            span
+            &>span
             {
                 cursor: pointer;
                 text-align: left;
@@ -33,6 +44,7 @@
                 padding-bottom: .5rem;
                 margin-left: 2.5rem;
                 opacity: 0;
+                transition: opacity 2s ease-out;
             }
 
             &.ouvert
@@ -42,7 +54,7 @@
                 span
                 {
                     opacity: 1;
-                    transition: opacity 1s ease-in-out;
+                    transition: opacity 1s ease-in;
                 }
             }
         }
