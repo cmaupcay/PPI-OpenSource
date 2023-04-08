@@ -1,0 +1,47 @@
+#ppi>header
+{
+    position: absolute;
+    left: 2vh;
+    height: 100%;
+
+    #titre
+    {
+        display: flex;
+        flex-direction: column;
+
+        *
+        {
+            display: flex;
+            align-items: end;
+
+            &.ouvert
+            {
+                margin-left: .5rem;
+            }
+
+            %element-titre {
+                color: var(--sombre);
+                text-shadow: 0 0 .5rem;
+                text-align: left;
+            }
+
+            h1
+            {
+                @extend %element-titre;
+                font-size: 7rem;
+                &:hover
+                {
+                    cursor: pointer;
+                }
+            }
+
+            span
+            {
+                @extend %element-titre;
+                font-size: 3rem;
+                letter-spacing: .5rem;
+                padding-bottom: .75rem;
+            }
+        }
+    }
+}

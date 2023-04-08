@@ -1,11 +1,11 @@
-PUBLIC=public
+DIST=dist
 SRC=src
 TSC=tsc
 WEBPACK=npx webpack
 
-target_default: all
+target_default: dev
 
-all: clean dev
+all: clean dist
 
 dev:
 	@-$(WEBPACK) -w
@@ -14,7 +14,7 @@ dist:
 	@-$(WEBPACK)
 
 clean:
-	@-rm -rf $(PUBLIC)/*.js $(PUBLIC)/*.map
+	@-rm -rf $(DIST) $(SRC)/*.d.ts
 
 clear: clean
 	@-rm -rf node_modules package-lock.json
