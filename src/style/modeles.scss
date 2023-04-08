@@ -1,15 +1,3 @@
-%texte {
-    user-select: text;
-    &::selection
-    {
-        background-color: $transparent;
-    }
-}
-
-%special {
-    text-shadow: 0 0 .5rem;
-    color: $principale;
-}
 
 %base {
     margin: 0;
@@ -18,7 +6,20 @@
     color: $clair;
     font-family: $police;
     transition: all 0.2s ease;
-    background: none
+    background: none;
+    &::selection
+    {
+        background-color: $transparent;
+    }
+}
+
+%texte {
+    user-select: text;
+}
+
+%special {
+    text-shadow: 0 0 .5rem;
+    color: $principale;
 }
 
 %panel {
