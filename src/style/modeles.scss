@@ -1,0 +1,42 @@
+%texte {
+    user-select: text;
+    &::selection
+    {
+        background-color: $transparent;
+    }
+}
+
+%special {
+    text-shadow: 0 0 .5rem;
+    color: $principale;
+}
+
+%base {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    color: $clair;
+    font-family: $police;
+    transition: all 0.2s ease;
+    background: none
+}
+
+%panel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: $plus-sombre;
+    border-radius: 1rem;
+}
+
+%image {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    &:hover
+    {
+        cursor: pointer;
+        transform: scale(1.05);
+    }
+}

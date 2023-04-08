@@ -37,6 +37,10 @@ module.exports = {
         exclude: "/node_modules/"
       },
       {
+        test: /\.(png|jpg|gif)$/i,
+        type: "asset/resource"
+      },
+      {
         test: /\.html$/,
         use: "html-loader",
         exclude: "/node_modules/"
@@ -46,6 +50,7 @@ module.exports = {
   output: {
     path: path,
     filename: "ppi.js",
+    assetModuleFilename: "img/[hash][ext][query]",
     clean: true
   },
   plugins: [

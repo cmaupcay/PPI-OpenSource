@@ -2,6 +2,7 @@
 {
     position: absolute;
     left: 2vh;
+    width: 7vw;
     height: 100%;
 
     #titre
@@ -19,15 +20,8 @@
                 margin-left: .5rem;
             }
 
-            %element-titre {
-                color: var(--sombre);
-                text-shadow: 0 0 .5rem;
-                text-align: left;
-            }
-
             h1
             {
-                @extend %element-titre;
                 font-size: 7rem;
                 &:hover
                 {
@@ -37,10 +31,11 @@
 
             span
             {
-                @extend %element-titre;
+                text-align: left;
                 font-size: 3rem;
                 letter-spacing: .5rem;
-                padding-bottom: .75rem;
+                padding-bottom: .5rem;
+                margin-left: 2.5rem;
             }
         }
     }

@@ -1,0 +1,29 @@
+#ppi>footer
+{
+    @extend %panel;
+    width: 80vw;
+    padding: 1.5vh 0;
+
+    section
+    {
+        height: 4rem;
+        width: 33.33%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #insa
+    {
+        @extend %image;
+        height: 80%;
+        background-image: url("./img/insa.png");
+    }
+
+    #source
+    {
+        @extend %image;
+        background-image: url("./img/github.png");
+    }
+}
