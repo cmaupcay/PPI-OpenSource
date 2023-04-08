@@ -1,9 +1,10 @@
 #ppi>footer
 {
     @extend %panel;
+    position: absolute;
+    bottom: 1.5vh;
     width: 80vw;
     padding: 1.5vh 0;
-
 
     @media (max-width: $media-s-max-width) {
         width: 92vw;
@@ -18,10 +19,15 @@
         }
     }
 
+    &.ferme
+    {
+        opacity: 0;
+        bottom: -9vh;
+    }
+
     &>section
     {
         height: 4rem;
-        width: 33.33%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -30,6 +36,7 @@
 
     &>#infos
     {
+        width: 50%;
         &>#nom
         {
             margin-bottom: .5vh;
@@ -39,11 +46,13 @@
     &>#insa
     {
         @include image("insa.png");
-        height: 80%;
+        width: 25%;
+        height: 2.5rem;
     }
 
     &>#source
     {
         @include image("github.png");
+        width: 25%;
     }
 }

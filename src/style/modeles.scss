@@ -9,12 +9,23 @@
     background: none;
     &::selection
     {
-        background-color: $transparent;
+        background-color: rgba($plus-sombre, .66);
     }
 }
 
 %texte {
     user-select: text;
+}
+
+%contenu
+{
+    padding: 0 2vw 4vh;
+    @media (max-width: $media-s-max-width) {
+        padding: {
+            left: 0;
+            right: 0;
+        };
+    }
 }
 
 %special {
@@ -27,7 +38,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    background-color: $plus-sombre;
+    background-color: rgba($plus-sombre, .92);
     border-radius: 1rem;
 }
 

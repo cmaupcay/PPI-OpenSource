@@ -1,8 +1,3 @@
-html
-{
-    overflow: hidden;
-}
-
 #ppi
 {
     @extend %base;
@@ -19,6 +14,11 @@ html
     overflow: hidden;
 
     * { @extend %base; }
+    
+    html>&
+    {
+        overflow: hidden;
+    }
 
     span
     {
@@ -28,43 +28,58 @@ html
 
     @for $n from 1 through 3
     {
+        $v: $n - 1;
         h#{$n}
         {
             @extend %special;
-            font-size: 3rem - .75 * ($n - 1);
+            font-size: 4rem - (.75 * $v);
             letter-spacing: .75rem;
             text-transform: uppercase;
             @media (max-width: $media-s-max-width) {
-                font-size: 2.5rem - .75 * ($n - 1);
+                font-size: 2.5rem - (.5 * $v);
             }
+        }
+
+        & article>h#{$n}
+        {
+            margin: 1.5rem - (.25 * $v) 0;
         }
     }
 
 
     @for $n from 4 through 5
     {
+        $v: $n - 4;
         h#{$n}
         {
-            font-size: 1.45rem - .3 * ($n - 4);
+            font-size: 1.5rem - (.25 * $v);
             letter-spacing: .5rem;
             @media (max-width: $media-s-max-width) {
-                font-size: 1.3rem - .3 * ($n - 4);
+                font-size: 1.25rem - (.25 * $v);
             }
+        }
+
+        & article>h#{$n}
+        {
+            margin: .5rem - (.1 * $v) 0;
         }
     }
 
     h6
     {
-        font-size: 1.05rem;
+        font-size: .95rem;
         letter-spacing: .25rem;
-        @media (max-width: $media-s-max-width) {
-            font-size: 0.95rem;
-        }
     }
 
     p
     {
         @extend %texte;
+        font-size: 1.15rem;
+        margin-bottom: 2rem;
+        line-height: 1.5rem;
+        text-align: justify;
+        text-indent: 1.5rem;
+
         &>*
         {
             @extend %texte;
