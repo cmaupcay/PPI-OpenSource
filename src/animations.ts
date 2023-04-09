@@ -9,7 +9,6 @@ export const ENTREE_CLASSE = "entree";
 export const ENTREE_DELAIS = 500;
 
 export const SCROLL_CLASSE = "scroll";
-export const SCROLL_LIMITE = "scroll-limite";
 
 const init_titre = () => {
     document.querySelectorAll("#ppi ." + REVELATION_CLASSE + ">*").forEach((e: Element, n: number) => {
@@ -22,9 +21,7 @@ const init_titre = () => {
 const init_scroll = (contenu: Element) => {
     let limite: scroll.Limite;
     document.querySelectorAll("#ppi ." + SCROLL_CLASSE).forEach((e: Element) => {
-        const limiteStr = e.getAttribute(SCROLL_LIMITE);
-        if (limiteStr) limite = Number.parseInt(limiteStr);
-        else limite = undefined;
+        limite = scroll.extraireLimite(e);
         scroll.lancer(e, contenu, limite);
         scroll.appliquer(e, contenu, limite);
     })

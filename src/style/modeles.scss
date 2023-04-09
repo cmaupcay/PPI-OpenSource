@@ -7,6 +7,8 @@
     font-family: $police;
     transition: all 0.2s ease;
     background: none;
+    scroll-behavior: smooth;
+
     &::selection
     {
         background-color: rgba($plus-sombre, .66);
@@ -33,7 +35,7 @@
     color: $principale;
 }
 
-%entree {
+%anime {
     transition: all .75s ease-in;
 }
 
@@ -44,6 +46,24 @@
     justify-content: center;
     background-color: rgba($plus-sombre, .92);
     border-radius: 1rem;
+}
+
+%fleche {
+    &::after
+    {
+        content: '';
+        display: flex;
+        position: relative;
+        border: {
+            width: .75rem;
+            style: solid;
+            color: $sombre;
+            top: none;
+            left: none;
+        };
+        border-radius: .5rem;
+        rotate: 45deg;
+    }
 }
 
 @mixin image($image) {

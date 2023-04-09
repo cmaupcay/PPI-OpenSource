@@ -1,6 +1,6 @@
 #ppi>#contenu
 {
-    @extend %entree;
+    @extend %anime;
     width: 72vw;
     padding: 0 14vw 14vh;
     overflow-y: scroll;
@@ -40,22 +40,13 @@
         margin-top: 4.5vh;
         min-height: 95.5vh;
 
+        @extend %fleche;
         &::after
         {
-            content: '';
-            position: relative;
             top: 3vh;
             width: 4rem;
             height: 4rem;
-            border: {
-                width: .75rem;
-                style: solid;
-                color: $sombre;
-                top: none;
-                left: none;
-            };
-            border-radius: .5rem;
-            rotate: 45deg;
+            border-width: 1rem;
         }
 
         &>#logo
