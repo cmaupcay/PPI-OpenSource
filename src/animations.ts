@@ -29,7 +29,7 @@ const init_scroll = (contenu: Element) => {
 
 const init_entree = (contenu: Element) => {
     init_scroll(contenu);
-    document.querySelectorAll("#ppi ." + ENTREE_CLASSE).forEach((e: Element) => {
+    document.querySelectorAll("." + ENTREE_CLASSE).forEach((e: Element) => {
         e.classList.remove(ENTREE_CLASSE);
     });
 }

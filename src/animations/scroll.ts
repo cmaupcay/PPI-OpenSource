@@ -17,7 +17,7 @@ export const extraireLimite = (cible: Element): Limite => {
     {
         let limite = Number.parseInt(limiteStr);
         if (limite < 0)
-            limite = window.innerHeight + limite;
+            limite += window.innerHeight;
         return limite;
     }
     return undefined;

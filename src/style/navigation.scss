@@ -8,11 +8,12 @@
     {
         @extend %anime;
         position: absolute;
-        right: 1vw;
+        bottom: 3vh;
         width: 5rem;
         height: 5rem;
         border-radius: 2rem;
         background-color: rgba($plus-sombre, .86);
+        z-index: 1;
 
         &:hover
         {
@@ -22,11 +23,11 @@
         }
 
         opacity: 0;
-        bottom: -4vh;
+        right: -4vw;
         &.scroll-limite
         {
             opacity: 1;
-            bottom: 3vh;
+            right: 1vw;
         }
 
         @extend %fleche;
