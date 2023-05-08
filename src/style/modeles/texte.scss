@@ -1,0 +1,9 @@
+.texte {
+    user-select: text;
+}
+
+.texte-special
+{
+    text-shadow: 0 0 .5rem;
+    color: $principale;
+}

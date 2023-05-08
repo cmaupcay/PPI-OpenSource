@@ -1,0 +1,8 @@
+@mixin transition($nom, $propriete, $debut, $fin)
+{
+    @include animation($nom)
+    {
+        from { #{$propriete}: $debut; }
+        to { #{$propriete}: $fin; }
+    }
+}

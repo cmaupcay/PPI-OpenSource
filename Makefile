@@ -1,6 +1,5 @@
 DIST=dist
 SRC=src
-TSC=tsc
 WEBPACK=npx webpack
 
 target_default: dev

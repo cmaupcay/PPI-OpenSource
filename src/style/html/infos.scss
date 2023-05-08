@@ -1,0 +1,46 @@
+#infos-panel
+{
+    #presentation
+    {
+        height: 60%;
+
+        &>*
+        {
+            margin-bottom: 2vh;
+        }
+
+        &>*:last-child
+        {
+            margin-bottom: 0;
+        }
+    }
+
+    #etudiant
+    {
+        height: 20%;
+
+        &>* 
+        {
+            @extend .texte;
+            @extend .texte-special;
+        }
+
+        #nom
+        {
+            margin-bottom: 1vh;
+        }
+
+        #mail
+        {
+            font-style: italic;
+        }
+    }
+
+    #insa
+    {
+        width: 90%;
+        height: 15%;
+        margin: 2.5% 5%;
+        @include image("insa.png");
+    }
+}

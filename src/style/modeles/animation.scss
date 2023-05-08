@@ -1,0 +1,7 @@
+@mixin animation($nom)
+{
+    @keyframes #{$nom}
+    {
+        @content;
+    }
+}

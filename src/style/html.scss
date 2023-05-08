@@ -1,0 +1,72 @@
+p
+{
+    @extend .texte;
+    font-size: 1.15rem;
+    margin-bottom: 2rem;
+    line-height: 1.5rem;
+    text-align: justify;
+    text-indent: 1.5rem;
+
+    &>*
+    {
+        @extend .texte;
+    }
+}
+
+span
+{
+    @extend .texte-special;
+    position: absolute;
+}
+
+@for $n from 1 through 3
+{
+    $v: $n - 1;
+    h#{$n}
+    {
+        @extend .texte-special;
+        font-size: 4rem - (.75 * $v);
+        letter-spacing: .75rem;
+        text-transform: uppercase;
+        @include media()
+        {
+            font-size: 2.5rem - (.5 * $v);
+        }
+    }
+
+    article>h#{$n}
+    {
+        margin: 1.5rem - (.25 * $v) 0;
+    }
+}
+
+
+@for $n from 4 through 5
+{
+    $v: $n - 4;
+    h#{$n}
+    {
+        font-size: 1.5rem - (.25 * $v);
+        letter-spacing: .5rem;
+        @include media()
+        {
+            font-size: 1.25rem - (.25 * $v);
+        }
+    }
+
+    article>h#{$n}
+    {
+        margin: .5rem - (.1 * $v) 0;
+    }
+}
+
+h6
+{
+    font-size: .95rem;
+    letter-spacing: .25rem;
+}
+
+@import "./html/body.scss";
+@import "./html/header.scss";
+@import "./html/contenu.scss";
+@import "./html/infos.scss";

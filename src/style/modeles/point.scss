@@ -1,0 +1,33 @@
+@mixin point($facteur: 1)
+{
+    $taille: 5rem * $facteur;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem * $facteur;
+    width: $taille;
+    height: $taille;
+    padding: 1rem * $facteur;
+    margin-bottom: $taille;
+    background-color: transparent;
+    border-radius: $taille;
+    border: .5rem * $facteur solid $sombre;
+
+    &>*
+    {
+        color: $clair;
+    }
+
+    &.actif, &:hover, &:focus, &:active
+    {
+        cursor: pointer;
+        font-size: 4.5rem * $facteur;
+        background-color: $plus-sombre;
+        border-color: $principale;
+
+        &>*
+        {
+            color: $principale;
+        }
+    }
+}

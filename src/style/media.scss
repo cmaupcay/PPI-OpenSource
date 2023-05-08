@@ -1,2 +1,10 @@
 $media-m-max-width: 1180px;
 $media-s-max-width: 850px;
+
+@mixin media($max-width: $media-s-max-width)
+{
+    @media screen and (max-width: $max-width)
+    {
+        @content;
+    }
+}

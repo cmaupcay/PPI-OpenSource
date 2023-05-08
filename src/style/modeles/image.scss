@@ -1,0 +1,14 @@
+@mixin image($image)
+{
+    background: {
+        image: url("./images/" + $image);
+        position: center;
+        size: contain;
+        repeat: no-repeat;
+    };
+    &:hover, &:focus, &:active
+    {
+        cursor: pointer;
+        transform: scale(1.05);
+    }
+}

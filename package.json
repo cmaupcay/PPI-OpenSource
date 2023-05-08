@@ -13,10 +13,12 @@
     "build": "make dist"
   },
   "devDependencies": {
+    "@types/marked": "^4.0.8",
     "css-loader": "^6.7.3",
     "css-modules-typescript-loader": "^4.0.1",
     "html-loader": "^4.2.0",
     "html-webpack-plugin": "^5.5.0",
+    "marked": "^4.3.0",
     "mini-css-extract-plugin": "^2.7.5",
     "sass": "^1.61.0",
     "sass-loader": "^13.2.2",

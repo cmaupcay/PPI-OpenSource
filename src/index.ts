@@ -1,7 +1,13 @@
-import * as animations from "./animations";
-import * as navigation from "./navigation";
+import * as header from "./header";
+import * as contenu from "./contenu";
+import * as infos from "./infos";
 
 import "./style.scss"
 
-animations.init();
-navigation.init();
+const init = async () => {
+    header.init();
+    contenu.init();
+    infos.init();    
+};
+
+init();

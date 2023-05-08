@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu&subset=cyrillic,latin");
+
+$principale: #b298dc;
+$clair: lighten($principale, 2);
+$plus-clair: lighten($clair, 4);
+$plus-plus-clair: lighten($plus-clair, 7);
+$sombre: darken($principale, 14);
+$plus-sombre: darken($sombre, 21);
+$plus-plus-sombre: darken($plus-sombre, 28);
+
+$police: 'Ubuntu', sans-serif;
+
+$entree: 1s;

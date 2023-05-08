@@ -8,7 +8,7 @@ module.exports = {
   mode: "production",
   devtool: "inline-source-map",
   resolve: {
-    extensions: [".ts", ".scss"],
+    extensions: [".ts", ".scss", ".mp3", ".md"],
   },
   module: {
     rules: [
@@ -37,7 +37,7 @@ module.exports = {
         exclude: "/node_modules/"
       },
       {
-        test: /\.(png|jpg|svg)$/i,
+        test: /\.(png|jpg|svg|mp3|md)$/,
         type: "asset/resource"
       },
       {
@@ -50,7 +50,7 @@ module.exports = {
   output: {
     path: path,
     filename: "ppi.js",
-    assetModuleFilename: "img/[hash][ext][query]",
+    assetModuleFilename: "ressources/[hash][ext][query]",
     clean: true
   },
   plugins: [

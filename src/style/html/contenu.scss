@@ -1,0 +1,218 @@
+#contenu
+{
+    width: 100vw;
+    animation: apparition $entree;
+    transition-duration: $entree;
+    overflow: hidden;
+
+    &>*
+    {
+        width: 64vw;
+        padding: 7vh 18vw 0;
+        height: 93vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include media()
+        {
+            width: 86vw;
+            padding: 7vh 7vw 0;
+        }
+        overflow: hidden;
+    }
+
+    #accueil
+    {
+        #logo
+        {
+            min-height: 28rem;
+            margin-bottom: 4vh;
+
+            @include transition(accueil, scale, .5, 1);
+            animation: accueil $entree * 2;
+
+            &>i
+            {
+                @extend .texte-special;
+                font-size: 28rem;
+                color: $plus-clair;
+
+                &:hover, &:focus, &:active
+                {
+                    cursor: pointer;
+                    scale: 1.05;
+                }
+            }
+        }
+
+        #problematique
+        {
+            @extend .texte;
+        }
+
+        #accueil-continuer
+        {
+            @include point(.75);
+            position: absolute;
+            bottom: 7vh;
+
+            &>i
+            {
+                rotate: 90deg;
+            }
+
+            @include flottement(continuer);
+            transition-duration: $entree;
+            animation: continuer 1s;
+            animation-iteration-count: infinite;
+
+            &.actif
+            {
+                bottom: -14vh;
+            }
+        }
+    }
+
+    #sommaire
+    {
+        &>*:first-child
+        {
+            margin-bottom: 4vh;
+        }
+
+        ul
+        {
+            list-style: none;
+
+            li
+            {
+                font-size: 2.5rem;
+                letter-spacing: .75rem;
+                width: 100%;
+                padding-bottom: 2vh;
+
+                &:hover, &:focus, &:active
+                {
+                    cursor: pointer;
+                    letter-spacing: 1rem;
+                }
+            }
+        }
+    }
+
+    #sommaire, #texte, #retour
+    {
+        opacity: 0;
+        transition-duration: $entree;
+    }
+
+    #sommaire, #texte
+    {
+        overflow-y: scroll;
+    }
+
+    #texte
+    {
+        margin-top: -100vh;
+        
+        &>h1
+        {
+            margin-bottom: 7rem;
+        }
+
+        &>h2
+        {
+            margin-bottom: 5.5rem;
+        }
+
+        &>p, &>h3
+        {
+            margin-bottom: 4rem;
+        }
+
+        &>p
+        {
+            line-height: 2rem;
+        }
+    }
+
+    #texte, #retour
+    {
+        margin-left: 100vw;
+    }
+
+    #retour
+    {
+        @include point(.75);
+        position: absolute;
+        top: 7vh;
+        left: 8vw;
+        z-index: 3;
+        display: none;
+        @include transition(retour, left, 12vw, 8vw);
+        animation: retour $entree;
+
+        @include media()
+        {
+            @include point(.5);
+        }
+
+        &:hover, &:focus, &:active
+        {
+            cursor: pointer;
+            left: 7vw;
+        }
+
+        &.ferme
+        {
+            opacity: 0 !important;
+            top: -14vh;
+        }
+    }
+
+    &.sommaire
+    {
+        margin-top: -100vh;
+    
+        #accueil, #texte, #retour
+        {
+            opacity: 0;
+        }
+
+        #retour
+        {
+            display: flex;
+        }
+
+        #sommaire
+        {
+            opacity: 1;
+        }
+    }
+
+    &.texte
+    {
+        margin-top: -100vh;
+
+        #accueil, #sommaire
+        {
+            opacity: 0;
+        }
+
+        #sommaire
+        {
+            margin-left: -100vw;
+        }
+
+        #texte, #retour
+        {
+            opacity: 1;
+            margin-left: 0;
+        }
+
+        #retour
+        {
+            display: flex;
+        }
+    }
+}

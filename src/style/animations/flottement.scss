@@ -1,0 +1,9 @@
+@mixin flottement($nom, $facteur: 1, $margin: bottom)
+{
+    @include animation($nom)
+    {
+        0% { margin-#{$margin}: 0vh; }
+        50% { margin-#{$margin}: 1vh * $facteur; }
+        100% { margin-#{$margin}: 0vh; }
+    }
+}

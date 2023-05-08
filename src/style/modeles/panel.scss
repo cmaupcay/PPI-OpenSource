@@ -1,0 +1,38 @@
+.panel
+{
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    height: 0vh;
+    z-index: 1;
+    transition: height $entree;
+
+    &>*
+    {
+        height: 60vh;
+        width: 40vw;
+        padding: 5vh 10vw;
+        margin: 15vh 20vw;
+        border-radius: 4rem;
+        background-color: $plus-sombre;
+        opacity: 0;
+        display: flex;
+        flex-direction: column;
+        transition: opacity $entree;
+        
+        &>*
+        {
+            margin-bottom: 1.25vh;
+        }
+    }
+
+    &.ouvert
+    {
+        height: 100vh;
+
+        &>*
+        {
+            opacity: 1;
+        }
+    }
+}
