@@ -10,7 +10,7 @@ target_default: all
 all: clean dist
 
 pdf: dist.pre
-	@-$(PANDOC) -o $(PDF_DIST) $(PDF_SRC)
+	@-echo Exportation du texte en PDF... && $(PANDOC) -o $(PDF_DIST) $(PDF_SRC)
 
 dev:
 	@-$(WEBPACK) -w
@@ -19,7 +19,7 @@ dist.pre:
 	@-mkdir -p $(DIST)
 
 dist.webpack:
-	@-$(WEBPACK)
+	@-echo Empaquetage du code source... && $(WEBPACK)
 
 dist: dist.webpack pdf
 
