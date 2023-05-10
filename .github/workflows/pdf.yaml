@@ -4,7 +4,9 @@ on: push
 
 jobs:
   export_via_pandoc:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v3
 
