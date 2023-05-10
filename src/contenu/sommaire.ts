@@ -5,11 +5,12 @@ import * as url from "../utils/url";
 const ID = "sommaire";
 
 export const SECTIONS = new Map<string, [string, string]>([
-    ["Introduction", [require("../textes/introduction.md"), "fa-solid fa-info"]],
-    ["Utiliser", [require("../textes/utiliser.md"), "fa-solid fa-user"]],
-    ["Contribuer", [require("../textes/contribuer.md"), "fa-solid fa-code"]],
-    ["Entreprendre", [require("../textes/entreprendre.md"), "fa-solid fa-briefcase"]],
-    ["Conclusion", [require("../textes/conclusion.md"), "fa-solid fa-forward"]]
+    ["Introduction", [require("../textes/1-introduction.md"), "fa-solid fa-info"]],
+    ["Utiliser", [require("../textes/2-utiliser.md"), "fa-solid fa-user"]],
+    ["Contribuer", [require("../textes/3-contribuer.md"), "fa-solid fa-code"]],
+    ["Entreprendre", [require("../textes/4-entreprendre.md"), "fa-solid fa-briefcase"]],
+    ["Conclusion", [require("../textes/5-conclusion.md"), "fa-solid fa-forward"]],
+    ["Ressources", [require("../textes/6-ressources.md"), "fa-solid fa-arrow-up-right-from-square"]]
 ]);
 
 const LISTE_ID = "sommaire-liste";

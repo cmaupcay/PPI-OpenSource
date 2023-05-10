@@ -2,7 +2,7 @@ DIST=dist
 SRC=src
 WEBPACK=npx webpack
 PANDOC=pandoc
-PDF_SRC=$(SRC)/textes/introduction.md $(SRC)/textes/utiliser.md $(SRC)/textes/contribuer.md $(SRC)/textes/entreprendre.md $(SRC)/textes/conclusion.md $(SRC)/textes/ressources.md
+PDF_SRC=$(SRC)/textes/*.md
 PDF_DIST=$(SRC)/ppi.pdf
 
 target_default: all

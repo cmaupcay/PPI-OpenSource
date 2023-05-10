@@ -13,12 +13,12 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        overflow: hidden;
         @include media()
         {
             width: 86vw;
             padding: 7vh 7vw 0;
         }
-        overflow: hidden;
     }
 
     #accueil
@@ -88,6 +88,7 @@
             align-items: center;
             justify-content: center;
             width: 100%;
+            margin-bottom: 7vh;
 
             li
             {
@@ -98,12 +99,13 @@
                 font-size: 4rem;
                 letter-spacing: .75rem;
                 width: 100%;
-                margin-bottom: 7vh;
+                margin-bottom: 5vh;
 
                 @include media()
                 {
-                    font-size: 2.4rem;
+                    font-size: 2.1rem;
                     flex-direction: column;
+                    margin-bottom: 10vh;
                 }
 
                 &:hover, &:focus, &:active
@@ -129,6 +131,7 @@
 
                     @include media()
                     {
+                        @include point(.86);
                         margin: {
                             right: 0;
                             bottom: 3vh;
@@ -165,22 +168,27 @@
 
         &>h1
         {
-            margin-bottom: 7rem;
+            padding-bottom: 7rem;
         }
 
         &>h2
         {
-            margin-bottom: 5.5rem;
+            padding-bottom: 5.5rem;
         }
 
         &>p, &>h3
         {
-            margin-bottom: 4rem;
+            padding-bottom: 4rem;
         }
 
         &>p
         {
             line-height: 2rem;
+        }
+
+        &>*:last-child
+        {
+            margin-bottom: 7vh;
         }
     }
 
@@ -203,6 +211,7 @@
         @include media()
         {
             @include point(.5);
+            margin-left: calc(42vw - 2.5rem) !important;
         }
 
         &:hover, &:focus, &:active

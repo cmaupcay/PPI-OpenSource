@@ -1,0 +1,14 @@
+name: PDF
+
+on: push
+
+jobs:
+  export_via_pandoc:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: docker://pandoc/core:2.9
+        with:
+          args: >-
+            --standalone
+            --output=src/ppi.pdf
+            src/textes/*.md
