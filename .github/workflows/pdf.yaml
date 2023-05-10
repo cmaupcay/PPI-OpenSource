@@ -10,7 +10,7 @@ jobs:
 
       - name: liste
         id: liste
-        run: echo "fichiers=$(printf '"src/%s" ' *.md)" > $GITHUB_OUTPUT
+        run: echo "fichiers=$(printf '"%s" ' src/textes/*.md)" > $GITHUB_OUTPUT
 
       - uses: docker://pandoc/core:2.9
         with:
