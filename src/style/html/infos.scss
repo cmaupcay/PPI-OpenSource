@@ -2,22 +2,30 @@
 {
     #presentation
     {
-        height: 60%;
+        height: 70%;
 
-        &>*
+        &>*:first-child
         {
             margin-bottom: 2vh;
         }
 
-        &>*:last-child
+        &>div
         {
-            margin-bottom: 0;
+            height: 70%;
+            overflow-y: scroll;
+
+            &>p
+            {
+                font-size: 1.4rem;
+                line-height: 2.1rem;
+                margin-bottom: 2vh;
+            }
         }
     }
 
     #etudiant
     {
-        height: 20%;
+        height: 10%;
 
         &>* 
         {

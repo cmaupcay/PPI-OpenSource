@@ -7,7 +7,7 @@
     z-index: 1;
     transition: height $entree;
 
-    &>*
+    &>*:first-child
     {
         height: 60vh;
         width: 40vw;
@@ -24,15 +24,31 @@
         {
             margin-bottom: 1.25vh;
         }
+
+        @include media($media-m-max-width)
+        {
+            width: 50vw;
+            padding: 5vh 5vw;
+        }
     }
 
     &.ouvert
     {
         height: 100vh;
 
-        &>*
+        &>*:first-child
         {
             opacity: 1;
+        }
+
+        @include media()
+        {
+            height: 0vh;
+
+            &>*:first-child
+            {
+                opacity: 0;
+            }
         }
     }
 }
