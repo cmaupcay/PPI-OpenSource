@@ -5,7 +5,7 @@ import * as ui from "../utils/ui";
 const LOGO_ID = "logo";
 const LOGO_URL = "https://opensource.org/";
 
-const PROBLEMATIQUE = "Comment allier mon projet professionnel aux valeurs de l'Open Source ?";
+const PROBLEMATIQUE = "Comment allier mon projet professionnel et les valeurs de l'Open Source ?";
 const PROBLEMATIQUE_ID = "problematique";
 const PROBLEMATIQUE_DELAIS = 64;
 
