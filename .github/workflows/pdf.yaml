@@ -12,7 +12,7 @@ jobs:
         id: liste
         run: echo "fichiers=$(printf '"%s" ' src/textes/*.md)" > $GITHUB_OUTPUT
 
-      - uses: docker://pandoc/core:2.9
+      - uses: docker://pandoc/latex:2.9
         with:
           args: >-
             --standalone
