@@ -7,7 +7,7 @@ PDF_DIST=$(SRC)/ppi.pdf
 
 target_default: all
 
-all: clean dist
+all: clean pdf dist
 
 pdf:
 	@-echo Exportation du texte en PDF... && $(PANDOC) -o $(PDF_DIST) $(PDF_SRC)
