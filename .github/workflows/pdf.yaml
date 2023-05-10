@@ -6,9 +6,20 @@ jobs:
   export_via_pandoc:
     runs-on: ubuntu-22.04
     steps:
+      - uses: actions/checkout@v3
+
+      - name: liste
+        id: liste
+        run: echo "fichiers=$(printf '"src/%s" ' *.md)" > $GITHUB_OUTPUT
+
       - uses: docker://pandoc/core:2.9
         with:
           args: >-
             --standalone
             --output=src/ppi.pdf
-            src/textes/*.md
+            ${{ steps.liste.outputs.fichiers }}
+          
+      - uses: actions/upload-artifact@v3
+        with:
+          name: output
+          path: output
