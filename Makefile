@@ -3,27 +3,25 @@ SRC=src
 WEBPACK=npx webpack
 PANDOC=pandoc
 PDF_SRC=$(SRC)/textes/introduction.md $(SRC)/textes/utiliser.md $(SRC)/textes/contribuer.md $(SRC)/textes/entreprendre.md $(SRC)/textes/conclusion.md $(SRC)/textes/ressources.md
-PDF_DIST=$(DIST)/ppi.pdf
+PDF_DIST=$(SRC)/ppi.pdf
 
 target_default: all
 
 all: clean dist
 
-pdf: dist.pre
+pdf:
 	@-echo Exportation du texte en PDF... && $(PANDOC) -o $(PDF_DIST) $(PDF_SRC)
 
-dev:
+dev: pdf
 	@-$(WEBPACK) -w
 
-dist.pre:
-	@-mkdir -p $(DIST)
-
-dist.webpack:
+dist: pdf
 	@-echo Empaquetage du code source... && $(WEBPACK)
 
-dist: dist.webpack pdf
+clean.pdf:
+	@-rm -rf $(PDF_DIST)
 
-clean:
+clean: clean.pdf
 	@-rm -rf $(DIST) $(SRC)/*.d.ts
 
 clear: clean

@@ -5,7 +5,7 @@ const INFOS_PANEL_ID = INFOS_ID + "-panel";
 const INFOS_PANEL_CLASSE_OUVERT = "ouvert";
 
 const PDF_ID = "pdf";
-const PDF_URL = "./ppi.pdf";
+const PDF_URL = require("../ppi.pdf");
 
 const SOURCE_ID = "source";
 const SOURCE_URL = "https://github.com/tensaiji/PPI-OpenSource";

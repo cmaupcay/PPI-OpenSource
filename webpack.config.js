@@ -8,7 +8,7 @@ module.exports = {
   mode: "production",
   devtool: "inline-source-map",
   resolve: {
-    extensions: [".ts", ".scss", ".mp3", ".md"],
+    extensions: [".ts", ".scss", ".mp3", ".md", ".pdf"],
   },
   module: {
     rules: [
@@ -37,7 +37,7 @@ module.exports = {
         exclude: "/node_modules/"
       },
       {
-        test: /\.(png|jpg|svg|mp3|md)$/,
+        test: /\.(png|jpg|svg|mp3|md|pdf)$/,
         type: "asset/resource"
       },
       {
