@@ -17,7 +17,7 @@ const init_vue = async (contenu: HTMLElement) => {
             {
                 const section = args.get(texte.SECTION)!;
                 if (sommaire.SECTIONS.has(section))
-                    texte.ouvrir(section, sommaire.SECTIONS.get(section)!, contenu);
+                    texte.ouvrir(section, sommaire.SECTIONS.get(section)![0], contenu);
             }
         }
         else contenu.className = vue;

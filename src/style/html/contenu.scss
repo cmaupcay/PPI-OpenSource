@@ -83,18 +83,57 @@
         ul
         {
             list-style: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
 
             li
             {
-                font-size: 2.5rem;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 4rem;
                 letter-spacing: .75rem;
                 width: 100%;
-                padding-bottom: 2vh;
+                margin-bottom: 7vh;
+
+                @include media()
+                {
+                    font-size: 2.4rem;
+                    flex-direction: column;
+                }
 
                 &:hover, &:focus, &:active
                 {
                     cursor: pointer;
                     letter-spacing: 1rem;
+                    text-shadow: 0 0 .5rem;
+                    color: $plus-clair;
+                }
+
+                &>i
+                {
+                    @include point(.64);
+                    margin: {
+                        right: 2rem;
+                        bottom: 0;
+                    };
+
+                    &::before
+                    {
+                        padding-left: .85rem;
+                    }
+
+                    @include media()
+                    {
+                        margin: {
+                            right: 0;
+                            bottom: 3vh;
+                        };
+                    }
                 }
             }
         }
@@ -113,8 +152,17 @@
 
     #texte
     {
+        display: block;
         margin-top: -100vh;
         
+        @include media($media-m-max-width)
+        {
+            &>*:first-child
+            {
+                margin-top: 14vh;
+            }
+        }
+
         &>h1
         {
             margin-bottom: 7rem;

@@ -4,8 +4,12 @@ import * as url from "../utils/url";
 
 const ID = "sommaire";
 
-export const SECTIONS = new Map<string, string>([
-    ["test", require("../textes/test.md")]
+export const SECTIONS = new Map<string, [string, string]>([
+    ["Introduction", [require("../textes/introduction.md"), "fa-solid fa-info"]],
+    ["Utiliser", [require("../textes/utiliser.md"), "fa-solid fa-user"]],
+    ["Contribuer", [require("../textes/contribuer.md"), "fa-solid fa-code"]],
+    ["Entreprendre", [require("../textes/entreprendre.md"), "fa-solid fa-briefcase"]],
+    ["Conclusion", [require("../textes/conclusion.md"), "fa-solid fa-forward"]]
 ]);
 
 const LISTE_ID = "sommaire-liste";
@@ -17,16 +21,16 @@ export const ouvrir = async (contenu: HTMLElement) => {
     url.modifier(ID);
 };
 
-const init_section = async (contenu: HTMLElement, sommaire: HTMLElement, nom: string, md: string) => {
+const init_section = async (contenu: HTMLElement, sommaire: HTMLElement, nom: string, vals: [string, string]) => {
     const section = document.createElement(SECTION_TAG);
     section.id = nom.replace(' ', '-').toLowerCase();
-    section.innerHTML = nom;
-    section.addEventListener("click", () => texte.ouvrir(nom, md, contenu));
+    section.innerHTML = "<i class=\"" + vals[1] + "\"></i>" + nom;
+    section.addEventListener("click", () => texte.ouvrir(nom, vals[0], contenu));
     sommaire.appendChild(section);
 };
 
 export const init = async (contenu: HTMLElement) => {
     const sommaire = document.getElementById(LISTE_ID);
     if (!!sommaire)
-        SECTIONS.forEach((md, nom) => init_section(contenu, sommaire, nom, md));
+        SECTIONS.forEach((vals, nom) => init_section(contenu, sommaire, nom, vals));
 };
