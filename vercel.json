@@ -1,6 +1,5 @@
 {
     "installCommand": "make install install.vercel",
     "buildCommand": "make",
-    "outputDirectory": "dist",
-    "region": "cdg1"
+    "outputDirectory": "dist"
 }
