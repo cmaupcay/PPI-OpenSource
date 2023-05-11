@@ -17,11 +17,13 @@
 - « _La croissance des logiciels open source viendra des entreprises_ » - Ridha Loukil ; __L'Usine nouvelle__ (_02/10/2012, [www.usinenouvelle.com](https://www.usinenouvelle.com/article/la-croissance-des-logiciels-open-source-viendra-des-entreprises.N183157)_)
 - « _Etude 2022 : Le marché de l’open source en France et Europe_ » - __CNLL__ (_08/11/2022, [cnll.fr](https://cnll.fr/news/etude-2022-le-march%C3%A9-de-lopen-source-en-france-et-europe/)_)
 - « _How Vue.js Creator Evan You Earns $16k/mo on Patreon_ » - Olivia Seitz ; __Patreon Blog__ (_21/08/2018, [blog.patreon.com](https://blog.patreon.com/vue-js-creator-evan-you)_)
+- « _When Free Software Depends on Nonfree_ » - Richard M. Stallman ; __GNU__ (_consulté le 11/05/2023, [www.gnu.org](https://www.gnu.org/philosophy/when-free-depends-on-nonfree.en.html)_)
 
 ### Wikipédia
 
 - « _Open source_ » - (_consulté le 10/05/2023, [fr.wikipedia.org](https://fr.wikipedia.org/wiki/Open_source)_)
 - « _Openwashing_ » - (_consulté le 10/05/2023, [fr.wikipedia.org](https://fr.wikipedia.org/wiki/Openwashing)_)
+- « _Open core_ » - (_consulté le 11/05/2023, [fr.wikipedia.org](https://fr.wikipedia.org/wiki/Open_core)_)
 - « _Open Source Definition_ » - (_consulté le 10/05/2023, [fr.wikipedia.org](https://fr.wikipedia.org/wiki/Open_Source_Definition)_)
 - « _Rétro-ingénierie_ » - (_consulté le 10/05/2023, [fr.wikipedia.org](https://fr.wikipedia.org/wiki/Rétro-ingénierie)_)
 - « _Red Hat_ » - (_consulté le 10/05/2023, [fr.wikipedia.org](https://fr.wikipedia.org/wiki/Red_Hat)_)
@@ -31,6 +33,8 @@
 - « _Matériel libre_ » - (_consulté le 11/05/2023, [fr.wikipedia.org](https://fr.wikipedia.org/wiki/Matériel_libre)_)
 - « _Gouvernement ouvert_ » - (_consulté le 11/05/2023, [fr.wikipedia.org](https://fr.wikipedia.org/wiki/Gouvernement_ouvert)_)
 - « _g0v_ » - (_consulté le 11/05/2023, [fr.wikipedia.org](https://en.wikipedia.org/wiki/G0v)_)
+- « _Modèles économiques des logiciels open source_ » - (_consulté le 11/05/2023, [fr.wikipedia.org](https://fr.wikipedia.org/wiki/Mod%C3%A8les_%C3%A9conomiques_des_logiciels_open_source)_)
+- « _Entreprise de services numériques_ » - (_consulté le 11/05/2023, [fr.wikipedia.org](https://fr.wikipedia.org/wiki/Entreprise_de_services_du_num%C3%A9rique)_)
 
 ---
 
