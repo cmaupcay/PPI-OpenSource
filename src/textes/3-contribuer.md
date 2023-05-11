@@ -6,7 +6,7 @@
 
 ---
 
-## ...en tant qu'amateur
+## ...en tant qu'indépendant
 
 ---
 
