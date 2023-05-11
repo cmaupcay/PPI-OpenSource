@@ -10,7 +10,6 @@
 ### Articles
 
 - « _L'Open Source, qu'est-ce que c'est ?_ » - __Red Hat__ (_24/10/2019, [www.redhat.com](https://www.redhat.com/fr/topics/open-source/what-is-open-source)_)
-- « _De l'open banking à l'open finance_ » - Denis Beau ; __Banque de France__ (_24/03/2022, [www.banque-france.fr](https://www.banque-france.fr/intervention/de-lopen-banking-lopen-finance)_)
 - « _De l'open banking à l'open finance_ » - Julien Maldonato, Ghislain Boulnois ; __Deloitte__ (_consulté le 10/05/2023, [www2.deloitte.com](https://www2.deloitte.com/fr/fr/pages/services-financier/articles/open-banking-vers-open-finance.html)_)
 - « _Un dev open source aurait volontairement corrompu des bibliothèques largement utilisées, affectant des tonnes de projets._ » - Stéphane le calme ; __Developpez.com__ (_10/01/2022, [www.developpez.com](https://www.developpez.com/actu/330046/Un-dev-open-source-aurait-volontairement-corrompu-des-bibliotheques-largement-utilisees-affectant-des-tonnes-de-projets-Il-avait-precedemment-demande-a-etre-remunere-pour-son-travail/)_)
 - « _Open source : les Gafam en tête des plus gros contributeurs sur GitHub_ » - Antoine Crochet-Damais ; __Journal du Net__ (_12/12/2019, [www.journaldunet.com](https://www.journaldunet.com/solutions/dsi/1487296-open-source-les-gafam-en-tete-des-plus-gros-contributeurs-sur-github/)_)
@@ -40,6 +39,13 @@
 
 ## Vidéos
 
+- « _#AuPoste avec Framasoft_ » - __Blast__ (_14/01/2023, [www.youtube.com](https://youtu.be/g_UR5FlOLKA)_)
+
 ### Conférences
 
 - « _The physical future of open source_ » - Alicia Gibb ; __Red Hat Summit__ (_09/05/2017, [www.youtube.com](https://youtu.be/EjmJm4veFr8)_)
+- « _Financer son logiciel libre, c'est possible !_ » - Ludovic Dubost ; __Capitole du Libre__ (_20/01/2023, [www.youtube.com](https://youtu.be/JxKVEGxPjd0)_)
+- « _Business model open-source: l'exemple de Bootlin dans le monde de l'embarqué_ » - Thomas Petazzoni ; __Capitole du Libre__ (_20/01/2023, [www.youtube.com](https://youtu.be/wqfOBMOVoBg)_)
+- « _Le logiciel libre, un enjeu politique et social – Comment agir avec l'April_ » - Étienne Gonnu, Isabella Vanni ; __Capitole du Libre__ (_20/01/2023, [www.youtube.com](https://youtu.be/bR4IEv5CiWk)_)
+- « _Les business models des éditeurs open source_ » - Sylvain Wallez ; __Capitole du Libre__ (_19/11/2018, [www.youtube.com](https://youtu.be/Xqr5NdqARa0)_)
+- « _Donner vie au RER toulousain avec des logiciels libres_ » - Benoît Lanusse ; __Capitole du Libre__ (_04/12/2018, [www.youtube.com](https://youtu.be/6gJ1_AhZSA0)_)
