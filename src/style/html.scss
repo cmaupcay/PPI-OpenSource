@@ -1,7 +1,7 @@
 p
 {
     @extend .texte;
-    font-size: 1.15rem;
+    font-size: 1.2rem;
     margin-bottom: 2rem;
     line-height: 1.5rem;
     text-align: justify;
@@ -48,6 +48,7 @@ span
     {
         font-size: 1.5rem - (.25 * $v);
         letter-spacing: .5rem;
+        text-transform: uppercase;
         @include media()
         {
             font-size: 1.25rem - (.25 * $v);
@@ -64,6 +65,12 @@ h6
 {
     font-size: .95rem;
     letter-spacing: .25rem;
+}
+
+hr
+{
+    @include point(.35);
+    margin-top: 3.5rem;
 }
 
 @import "./html/body.scss";

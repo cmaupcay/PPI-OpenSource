@@ -155,9 +155,15 @@
 
     #texte
     {
-        display: block;
+        display: flex;
         margin-top: -100vh;
         
+        &>*
+        {
+            width: 100%;
+        }
+
+
         @include media($media-m-max-width)
         {
             &>*:first-child
@@ -168,27 +174,74 @@
 
         &>h1
         {
-            padding-bottom: 7rem;
+            margin-bottom: 5.5rem;
         }
 
         &>h2
         {
-            padding-bottom: 5.5rem;
+            margin: 4.5rem 0 2.25rem;
         }
 
-        &>p, &>h3
+        &>h3
         {
-            padding-bottom: 4rem;
+            margin: 4rem 0 2rem;
         }
 
-        &>p
+        &>h4
         {
-            line-height: 2rem;
+            margin: 3.5rem 0 1.75rem;
+        }
+
+        &>h5
+        {
+            margin: 3rem 0 1.5rem;
+        }
+
+        &>h6
+        {
+            margin: 2.5rem 0 1.25rem;
+        }
+
+        p
+        {
+            margin: 1rem 0 2rem;
+            line-height: 2.1rem;
+        }
+
+        &>ol, &>ul
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+
+            li
+            {
+                width: 66%;
+                margin: 1rem;
+                font-size: 1.2rem;
+                line-height: 1.9rem;
+                color: $clair;
+            }
+        }
+
+        &>blockquote
+        {
+            background-color: $plus-sombre;
+            padding: 1rem 2rem;
+            border-radius: 2rem;
+
+            &>*
+            {
+                margin: 0;
+                font-style: italic;
+            }
         }
 
         &>*:last-child
         {
-            margin-bottom: 7vh;
+            margin-bottom: 7rem;
         }
     }
 
