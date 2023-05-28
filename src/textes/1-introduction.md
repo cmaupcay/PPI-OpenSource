@@ -139,7 +139,7 @@ De nombreux projets bénéficient aussi du support des __grandes entreprises tec
 
 ### Un marché français en pleine croissance
 
-Oui, il est possible de gagner de l'argent en France en faisant de l'__open source__. C'est en tout cas l'avis du cabinet ___Pierre Audoin Consultants___ qui, en 2011, évaluait le marché français de l'_open source_ à __2,5 milliards d'euros__, soit 6% du marché total des logiciels et services, avec une __croissance de 30% par an__.
+Oui, il est possible de gagner de l'argent en France en faisant de l'__open source__. C'est en tout cas l'avis du cabinet ___Pierre Audoin Consultants___ qui, en 2011, évaluait le marché français de l'_open source_ à __2,5 milliards d'euros__, soit 6% du marché total des logiciels et services, avec une __croissance prévue de 30% par an__.
 
 Une prévision qui semble s'être confirmée en partie puisqu'en 2022, selon ___MARKESS___, l'_open source_ en France représentait __6 milliards d'euros de revenu__ et __60 000 emplois directs__, faisant du pays le leader de l'_open source_ en Europe. Une situation favorable qui devrait perdurer avec une __croissance prévue de 8% par an__ entre 2022 et 2027.
 
@@ -149,7 +149,7 @@ Le concept d'_open source_ s'étant aujourd'hui bien au-delà des logiciels info
 
 #### Open Hardware
 
-La volonté d'étendre les principes de l'_open source_ à l'électronique est notamment incarnée par la ___[open source Hardware Association](https://www.oshwa.org/)___ (_OSHWA_), dans un secteur où la quasi-totalité des produits est propriétaire malgré des standards ouverts. Cette initiative fait écho, plus généralement, au mouvement du __matériel libre__.
+La volonté d'étendre les principes de l'_open source_ à l'électronique est notamment incarnée par l'___[Open Source Hardware Association](https://www.oshwa.org/)___ (_OSHWA_), dans un secteur où la quasi-totalité des produits est propriétaire malgré des standards ouverts. Cette initiative fait écho, plus généralement, au mouvement du __matériel libre__.
 
 Les enjeux sont de tailles, notamment lorsqu'on sait, suite aux révélations d'Edward Snowden et d'autres, que certains composants d'ordinateurs commerciaux cachent des __portes dérobées__ (_faille de sécurité volontairement dissimulée pour être exploitée_).
 
