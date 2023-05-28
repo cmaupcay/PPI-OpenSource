@@ -58,7 +58,7 @@ module.exports = {
       filename: "ppi.css"
     }),
     new HtmlWebpackPlugin({
-      template: "src/html/index.html"
+      template: "src/index.html"
     })
   ]
 }

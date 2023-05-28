@@ -4,8 +4,11 @@ const INFOS_ID = "infos";
 const INFOS_PANEL_ID = INFOS_ID + "-panel";
 const INFOS_PANEL_CLASSE_OUVERT = "ouvert";
 
-const PDF_ID = "pdf";
-const PDF_URL = require("../ppi.pdf");
+const PDF_TEXTES_ID = "pdf-textes";
+const PDF_TEXTES_URL = require("../docs/textes.pdf");
+
+const PDF_PRESENTATION_ID = "pdf-presentation";
+const PDF_PRESENTATION_URL = require("../docs/presentation.pdf");
 
 const SOURCE_ID = "source";
 const SOURCE_URL = "https://github.com/tensaiji/PPI-OpenSource";
@@ -21,6 +24,7 @@ const init_infos = async () => {
 
 export const init = async () => {
     init_infos();
-    ui.lien(PDF_ID, PDF_URL);
+    ui.lien(PDF_TEXTES_ID, PDF_TEXTES_URL);
+    ui.lien(PDF_PRESENTATION_ID, PDF_PRESENTATION_URL);
     ui.lien(SOURCE_ID, SOURCE_URL);
 };

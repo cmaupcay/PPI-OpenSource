@@ -3,7 +3,7 @@ SRC=src
 WEBPACK=npx webpack
 PANDOC=pandoc
 PDF_SRC=$(SRC)/textes/*.md
-PDF_DIST=$(SRC)/ppi.pdf
+PDF_DIST=$(SRC)/docs/textes.pdf
 
 target_default: all
 

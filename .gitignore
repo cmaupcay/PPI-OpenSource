@@ -2,4 +2,4 @@ package-lock.json
 node_modules
 *.d.ts
 dist
-src/*.pdf
+src/docs/textes.pdf
